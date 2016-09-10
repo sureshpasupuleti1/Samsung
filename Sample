@@ -1,0 +1,11 @@
+preferences {
+section("When activity on any of these sensors") {
+input "contactSensors", "capability.contactSensor",
+title: "Open/close sensors", multiple: true
+input "motionSensors", "capability.motionSensor",
+title: "Motion sensors?", multiple: true
+}
+section("Turn on these lights") {
+input "switches", "capability.switch", multiple: true
+}
+}
